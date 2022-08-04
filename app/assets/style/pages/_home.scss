@@ -24,13 +24,13 @@ h4 {
 .banner {
     max-width: 100%;
     height: calc(100vh - 80px);
-    background: url('../../../assets/images/home-header.png');
+    background: url('../../images/home-header.png');
     background-size: cover;
     position: relative;
 
     @include pad {
         height: calc(100vh - 175.2px);
-        background: url('../../../assets/images/home-header-sm.png');
+        background: url('../../images/home-header-sm.png');
         background-size: cover;
     }
 
@@ -154,7 +154,7 @@ h4 {
 }
 
 .mainDesign {
-    background: url('../../../assets/images/index-bg.png');
+    background: url('../../images/index-bg.png');
     max-width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -168,9 +168,9 @@ h4 {
         }
     }
     .dOUBLEA {
-        background-image: url('../../../assets/images/home-section4-1.png');
+        background-image: url('../../images/home-section4-1.png');
         @include mobile {
-            background-image: url('../../../assets/images/home-section4-1-sm.png');
+            background-image: url('../../images/home-section4-1-sm.png');
         }
     }
     .yOUTH {
