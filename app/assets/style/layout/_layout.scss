@@ -1,0 +1,171 @@
+.bg-red {
+    background: $red;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.d-flex {
+    display: flex;
+}
+.mr-6 {
+    margin-right: 48px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include pad {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        img {
+            width: 80px;
+            height: 56px;
+        }
+    }
+
+    .headerMenu {
+        display: flex;
+        justify-content: space-between;
+
+        @include pad {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        li {
+            @include pad {
+                text-align: center;
+                width: 50%;
+                border: 0.5px solid #fff;
+            }
+
+            a {
+                white-space: nowrap;
+                padding: 8px;
+                margin: 0 24px;
+                font-size: 20px;
+                color: #fff;
+
+                &:hover {
+                    background: #fff;
+                    color: $red;
+                    border-radius: 8px;
+
+                    @include pad {
+                        margin: 0;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.footer {
+    padding-top: 48px;
+    .footerContent {
+        justify-content: space-between;
+    }
+    
+}
+
+.footeMenu {
+    margin-bottom: 36px;
+    @include pad {
+        display: none;
+    }
+    li {
+        margin-right: 48px;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: $dark-red;
+            }
+        }
+    }
+}
+
+.connection {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 24px;
+    @include pad {
+        font-size: 16px;
+    }
+    li {
+        align-items: center;
+        margin-bottom: 8px;
+
+        &:hover span,
+        &:hover a {
+            color: $dark-red;
+        }
+    }
+
+    span {
+        font-size: 36px;
+        margin-right: 20px;
+        @include pad {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.connectionImg {
+    li {
+        margin-right: 32px;
+        @include pad {
+            margin-right: 8px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            @include pad {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+}
+
+.footerTrxt {
+    padding: 32px 0 24px 0;
+    border-top: 1px solid #FFF;
+    justify-content: space-between;
+    @include pad {
+        flex-direction: column;
+    }
+    p {
+        color: #fff;
+        @include pad {
+            margin-bottom: 8px;
+        }
+    }
+    >div {
+        @include pad {
+            flex-direction: column;
+        }
+        
+    }
+}

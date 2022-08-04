@@ -1,0 +1,81 @@
+.store {
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    h2 {
+        text-align: left;
+        padding: 0 16px;
+        border-left: 8px solid #9F1213;
+        color: #000;
+        margin-bottom: 32px;
+    }
+
+    .choose {
+        align-items: center;
+        margin-bottom: 40px;
+
+        p {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        select {
+            font-size: 18px;
+            border: 1px solid #CED4DA;
+            width: 304px;
+            padding: 6px 12px;
+        }
+    }
+
+    ul {
+        flex-wrap: wrap;
+        li {
+            width: 30%;
+            border: 1px solid #00000020;
+            margin-bottom: 48px;
+            margin-left: 24px;
+
+            @include pad {
+                width: 45%;
+            }
+
+            @include mobile {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    a {
+        width: 100%;
+        background: #000;
+        color: #fff;
+        font-size: 19px;
+        line-height: 27px;
+        text-align: center;
+        padding: 16px 0;
+    }
+}
+
+.storeCardContent {
+    padding: 8px 24px;
+
+    h3 {
+        font-size: 24px;
+        // margin-bottom: 24px;
+    }
+
+    .storeCardContentAlign {
+        align-items: center;
+        // margin-bottom: 8px;
+    }
+
+    .storeCardContentIcon {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .storeCardContentText {
+        font-size: 20px;
+    }
+}
